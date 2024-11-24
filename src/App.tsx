@@ -34,7 +34,7 @@ function App() {
             {/* Here we add our button with alert callback */}
             <div className="card">
                 <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
-                    Show Alert
+                    Show Alert!
                 </button>
             </div>
         </>
