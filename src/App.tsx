@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {TonConnectUIProvider} from '@tonconnect/ui-react'
 import {Header} from "./components/Header/Header"
-import {TxModal} from "./components/TxModal/TxModal"
 import WebApp from '@twa-dev/sdk'
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
         >
             <div className="App">
                 <Header/>
-                <TxModal/>
                 <div>
                     <a href="https://vite.dev" target="_blank">
                         <img src={viteLogo} className="logo" alt="Vite logo"/>
