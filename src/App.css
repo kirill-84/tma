@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+header {
+  display: block;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
