@@ -17,7 +17,7 @@ function App() {
     const [firstName, setFirstName] = useState<string | null>("");
     const [lastName, setLastName] = useState<string | null>("");
     
-    const tgWrapperRef = useRef(null);
+    const telegramWrapperRef = useRef(null);
     
     useEffect(() => {
         const scriptElement = document.createElement("script");
@@ -27,7 +27,7 @@ function App() {
         scriptElement.setAttribute("data-auth-url", "");
         scriptElement.async = true;
         
-        tgWrapperRef.current.appendChild(scriptElement);
+        telegramWrapperRef.current.appendChild(scriptElement);
     }, []);
         
     useEffect(() => {
@@ -40,7 +40,7 @@ function App() {
         <>
             <div 
                 className="telegram-login-widget flex justify-center mb-3"
-                ref={tgWrapperRef}
+                ref={telegramWrapperRef}
             ></div>
             {id || firstName || lastName ? (
                 <Card className="max-w-sm">
