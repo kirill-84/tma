@@ -28,7 +28,7 @@ function App() {
             </div>
             <h1>Vite + React</h1>
             <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
+                <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 mb-3" onClick={() => setCount((count) => count + 1)}>
                     count is {count}
                 </button>
                 <p>Edit <code>src/App.tsx</code> and save to test HMR</p>
