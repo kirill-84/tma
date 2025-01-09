@@ -42,7 +42,9 @@ function App() {
                 </button>
             </div>
         </div>
-        {/* </TonConnectUIProvider> */}
+        {/* </
+        TonConnectUIProvider
+        > */}
     )
 }
 
