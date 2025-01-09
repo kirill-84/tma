@@ -1,21 +1,21 @@
-import {useState} from 'react'
+import {useState, useRef, useEffect, useMemo} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import {TonConnectUIProvider} from '@tonconnect/ui-react'
+// import {TonConnectUIProvider} from '@tonconnect/ui-react'
 import {Header} from "./components/Header/Header"
 import WebApp from '@twa-dev/sdk'
 
 function App() {
     const [count, setCount] = useState(0)
-
+    
     return (
-        <TonConnectUIProvider
+        {/* <TonConnectUIProvider
             manifestUrl="https://kirill-84.github.io/tma/tonconnect-manifest.json"
             actionsConfiguration={{
                 twaReturnUrl: 'https://t.me/TMAppsBot'
             }}
-        >
+        > */}
             <div className="App">
                 <Header/>
                 <div>
@@ -42,7 +42,7 @@ function App() {
                     </button>
                 </div>
             </div>
-        </TonConnectUIProvider>
+            {/* </TonConnectUIProvider> */}
     )
 }
 
