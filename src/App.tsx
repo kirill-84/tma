@@ -18,7 +18,7 @@ function App() {
         >
         <div className="App">
             <Header/>
-            <div className="grid grid-flow-col grid-rows-2 gap-8">
+            <div className="grid grid-flow-col">
                 <a href="https://vite.dev" target="_blank">
                     <img src={viteLogo} className="logo w-full" loading="lazy" alt="Vite logo"/>
                 </a>
@@ -28,7 +28,7 @@ function App() {
             </div>
             <h1>Vite + React</h1>
             <div className="card">
-                <button className="hover:bg-blue-400 group flex items-center rounded-md bg-blue-500 text-white text-sm font-medium mb-3 pl-2 pr-3 py-2 shadow-sm" onClick={() => setCount((count) => count + 1)}>
+                <button className="hover:bg-blue-400 group flex-auto items-center rounded-md bg-blue-500 text-white text-sm font-medium mb-3 pl-2 pr-3 py-2 shadow-sm" onClick={() => setCount((count) => count + 1)}>
                     count is {count}
                 </button>
                 <p>Edit <code>src/App.tsx</code> and save to test HMR</p>
