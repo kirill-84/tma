@@ -14,7 +14,6 @@ function App() {
     
     const [count, setCount] = useState(0);
     
-    const [count, setCount] = useState(0);
   const [id, setId] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
