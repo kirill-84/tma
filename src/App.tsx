@@ -38,7 +38,10 @@ function App() {
     
     return (
         <div className="App">
-            <div className="telegram-login-widget flex justify-center mb-3" ref={tgWrapperRef}></div>
+            <div 
+                className="telegram-login-widget flex justify-center mb-3"
+                ref={tgWrapperRef}
+            ></div>
             {id || firstName || lastName ? (
                 <Card className="max-w-sm">
                     <h5 className="text-xl text-left font-bold tracking-tight text-gray-900 dark:text-white">
