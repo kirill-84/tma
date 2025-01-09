@@ -3,8 +3,6 @@ import { Card } from 'flowbite-react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-// import {TonConnectUIProvider} from '@tonconnect/ui-react';
-// import {Header} from "./components/Header/Header";
 import WebApp from '@twa-dev/sdk';
 
 function App() {
