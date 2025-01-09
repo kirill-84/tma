@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     const scriptElement = document.createElement("script");
     scriptElement.src = "https://telegram.org/js/telegram-widget.js?22";
-    scriptElement.setAttribute("data-telegram-login", "suptarr_bot");
+    scriptElement.setAttribute("data-telegram-login", "TMAppsBot");
     scriptElement.setAttribute("data-size", "large");
     scriptElement.setAttribute("data-auth-url", "");
     scriptElement.async = true;
