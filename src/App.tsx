@@ -25,6 +25,7 @@ function App() {
         scriptElement.setAttribute("data-telegram-login", "TMAppsBot");
         scriptElement.setAttribute("data-size", "large");
         scriptElement.setAttribute("data-auth-url", "");
+        scriptElement.setAttribute("data-request-access", "write");
         scriptElement.async = true;
         
         telegramWrapperRef.current.appendChild(scriptElement);
