@@ -1,5 +1,6 @@
 // import {TonConnectButton} from "@tonconnect/ui-react"
 import {useState, useRef, useEffect, useMemo} from 'react'
+import { Card } from "flowbite-react"
 
 const searchParams = useMemo(
     () => new URLSearchParams(document.location.search),
