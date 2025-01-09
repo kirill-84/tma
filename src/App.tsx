@@ -39,14 +39,7 @@ function App() {
     }, [searchParams]);
     
     return (
-        {/* <TonConnectUIProvider
-            manifestUrl="https://kirill-84.github.io/tma/tonconnect-manifest.json"
-            actionsConfiguration={{
-                twaReturnUrl: 'https://t.me/TMAppsBot'
-            }}
-        > */}
         <div className="App">
-        {/* <Header/> */}
             <div className="telegram-login-widget flex justify-center mb-3" ref={tgWrapperRef}></div>
             {id || firstName || lastName ? (
                 <Card className="max-w-sm">
@@ -90,9 +83,6 @@ function App() {
                 </button>
             </div>
         </div>
-        {/* </
-        TonConnectUIProvider
-        > */}
     )
 }
 
