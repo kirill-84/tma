@@ -18,17 +18,17 @@ function App() {
         >
         <div className="App">
             <Header/>
-            <div className="columns-3xs">
+            <div className="grid grid-flow-col grid-rows-2 gap-8">
                 <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo w-full" alt="Vite logo"/>
+                    <img src={viteLogo} className="logo w-full" loading="lazy" alt="Vite logo"/>
                 </a>
                 <a href="https://react.dev" target="_blank">
-                    <img src={reactLogo} className="logo react w-full" alt="React logo"/>
+                    <img src={reactLogo} className="logo react w-full" loading="lazy" alt="React logo"/>
                 </a>
             </div>
             <h1>Vite + React</h1>
             <div className="card">
-                <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 mb-3" onClick={() => setCount((count) => count + 1)}>
+                <button className="hover:bg-blue-400 group flex items-center rounded-md bg-blue-500 text-white text-sm font-medium mb-3 pl-2 pr-3 py-2 shadow-sm" onClick={() => setCount((count) => count + 1)}>
                     count is {count}
                 </button>
                 <p>Edit <code>src/App.tsx</code> and save to test HMR</p>
@@ -37,7 +37,7 @@ function App() {
             <p>Test from MiniApps</p>
             {/* Here we add our button with alert callback */}
             <div className="card">
-                <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
+                <button className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
                     Show Alert!
                 </button>
             </div>
