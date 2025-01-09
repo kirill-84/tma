@@ -3,7 +3,6 @@ import { Card } from 'flowbite-react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import WebApp from '@twa-dev/sdk';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -37,7 +36,7 @@ function App() {
     }, [searchParams]);
     
     return (
-        <div className="App">
+        <>
             <div 
                 className="telegram-login-widget flex justify-center mb-3"
                 ref={tgWrapperRef}
@@ -83,8 +82,8 @@ function App() {
                     Show Alert!
                 </button>
             </div>
-        </div>
-    )
+        </>
+    );
 }
 
 export default App;
