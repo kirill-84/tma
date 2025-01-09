@@ -10,6 +10,12 @@ function App() {
     const [count, setCount] = useState(0)
     
     return (
+        {/* <TonConnectUIProvider
+            manifestUrl="https://kirill-84.github.io/tma/tonconnect-manifest.json"
+            actionsConfiguration={{
+                twaReturnUrl: 'https://t.me/TMAppsBot'
+            }}
+        > */}
         <div className="App">
             <Header/>
             <div>
@@ -36,6 +42,7 @@ function App() {
                 </button>
             </div>
         </div>
+        {/* </TonConnectUIProvider> */}
     )
 }
 
