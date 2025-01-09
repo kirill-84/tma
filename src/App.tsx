@@ -47,27 +47,25 @@ function App() {
         > */}
         <div className="App">
         {/* <Header/> */}
-        <div className="telegram-login-widget flex justify-center mb-3" ref={tgWrapperRef}></div>
-        {id || firstName || lastName ? (
-        <Card className="max-w-sm">
-          <h5 className="text-xl text-left font-bold tracking-tight text-gray-900 dark:text-white">
-            Data from Telegram redirecting
-          </h5>
-          <p className="font-normal text-left text-gray-700 dark:text-gray-400">
-            <span className="font-bold">ID: </span> {id ? id : "-"}
-          </p>
-          <p className="font-normal text-left text-gray-700 dark:text-gray-400">
-            <span className="font-bold">First name: </span>
-            {firstName ? firstName : "-"}
-          </p>
-          <p className="font-normal text-left text-gray-700 dark:text-gray-400">
-            <span className="font-bold">Last name: </span>
-            {lastName ? lastName : "-"}
-          </p>
-        </Card>
-      ) : (
-        <></>
-      )}
+            <div className="telegram-login-widget flex justify-center mb-3" ref={tgWrapperRef}></div>
+            {id || firstName || lastName ? (
+                <Card className="max-w-sm">
+                    <h5 className="text-xl text-left font-bold tracking-tight text-gray-900 dark:text-white">
+                        Data from Telegram redirecting
+                    </h5>
+                    <p className="font-normal text-left text-gray-700 dark:text-gray-400">
+                        <span className="font-bold">ID: </span> {id ? id : "-"}
+                    </p>
+                    <p className="font-normal text-left text-gray-700 dark:text-gray-400">
+                        <span className="font-bold">First name: </span> {firstName ? firstName : "-"}
+                    </p>
+                    <p className="font-normal text-left text-gray-700 dark:text-gray-400">
+                        <span className="font-bold">Last name: </span> {lastName ? lastName : "-"}
+                    </p>
+                </Card>
+            ) : (
+                <></>
+            )}
             <div>
                 <a href="https://vite.dev" target="_blank">
                     <img src={viteLogo} className="logo" alt="Vite logo"/>
