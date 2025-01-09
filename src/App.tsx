@@ -13,7 +13,7 @@ function App() {
         []
     );
     
-    const [id, setId] = useState(0);
+    const [id, setId] = useState<string | null>("");
     const [firstName, setFirstName] = useState<string | null>("");
     const [lastName, setLastName] = useState<string | null>("");
     
