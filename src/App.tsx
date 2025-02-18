@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {TonConnectUIProvider} from '@tonconnect/ui-react'
 import {Header} from "./components/Header/Header"
-import {Settings} from "./components/Header/transactions"
 import WebApp from '@twa-dev/sdk'
 
 function App() {
@@ -35,7 +34,6 @@ function App() {
                 <p>Edit <code>src/App.tsx</code> and save to test HMR</p>
             </div>
             <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-            <Settings/>
             {/* Here we add our button with alert callback */}
             <div className="card">
                 <button className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
