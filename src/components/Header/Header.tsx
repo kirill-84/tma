@@ -8,8 +8,8 @@ export const Header = () => {
     };
     
     return <header>
-        <span className="block">My App with React UI!</span>
-        <TonConnectButton className="btn block mb-1" />
+        <span className="block mb-1">My App with React UI!</span>
+        <TonConnectButton className="btn block" />
         <div className="block m-4">
           <label>language</label>
           <select onChange={(e) => onLanguageChange(e.target.value as Locales)}>
