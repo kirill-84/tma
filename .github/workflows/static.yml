@@ -45,9 +45,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
+          name: my-artifact
           # Upload dist repository
           path: './docs'
-          overwrite: true
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
