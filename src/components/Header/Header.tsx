@@ -1,12 +1,12 @@
 import {TonConnectButton, Locales, useTonConnectUI} from "@tonconnect/ui-react"
 
-const [tonConnectUI, setOptions] = useTonConnectUI();
-
-const onLanguageChange = (language: Locales) => {
-    setOptions({ language });
-};
-
 export const Header = () => {
+    const [tonConnectUI, setOptions] = useTonConnectUI();
+
+    const onLanguageChange = (language: Locales) => {
+        setOptions({ language });
+    };
+    
     return <header>
         <span className="block">My App with React UI!</span>
         <TonConnectButton className="btn float-right" />
