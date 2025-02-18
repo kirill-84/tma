@@ -10,7 +10,7 @@ export const Header = () => {
     return <header>
         <span className="block">My App with React UI!</span>
         <TonConnectButton className="btn float-right" />
-        <div className="m-4">
+        <div className="float-none block m-4">
           <label>language</label>
           <select onChange={(e) => onLanguageChange(e.target.value as Locales)}>
             <option value="en">en</option>
