@@ -1,4 +1,4 @@
-import {TonConnectButton} from "@tonconnect/ui-react"
+import {TonConnectButton, useTonConnectUI} from "@tonconnect/ui-react"
 const [tonConnectUI] = useTonConnectUI();
 
 const transaction = {
