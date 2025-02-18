@@ -18,7 +18,7 @@ export const Header = () => {
             <option value="ru">ru</option>
           </select>
         </div>
-        {wallet && (
+        (wallet && (
           <div>
             <span>Connected wallet address: {wallet.account.address}</span>
             <span>Device: {wallet.device.appName}</span>
@@ -30,6 +30,6 @@ export const Header = () => {
               {wallet.name} <img src={wallet.imageUrl} />
             </div>
           </div>
-        )}
+        ))
     </header>
 }
