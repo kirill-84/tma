@@ -1,13 +1,7 @@
 import {TonConnectButton, Locales, useTonConnectUI} from "@tonconnect/ui-react"
-import TonConnectUI from '@tonconnect/ui'
-
-const tonConnectUI = new TonConnectUI({
-    manifestUrl: 'https://kirill-84.github.io/tma/tonconnect-manifest.json',
-    buttonRootId: 'div#tma'
-});
 
 export const Header = () => {
-    const [TonConnectUI, setOptions] = useTonConnectUI();
+    const [, setOptions] = useTonConnectUI();
 
     const onLanguageChange = (language: Locales) => {
         setOptions({ language });
