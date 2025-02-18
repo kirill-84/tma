@@ -1,7 +1,6 @@
 import {TonConnectButton, Locales, useTonConnectUI} from "@tonconnect/ui-react";
 
 export const Header = () => {
-    const wallet = useTonWallet();
     const [, setOptions] = useTonConnectUI();
 
     const onLanguageChange = (language: Locales) => {
