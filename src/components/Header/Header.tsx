@@ -1,4 +1,4 @@
-import {useTonWallet, TonConnectButton, Locales, useTonConnectUI} from "@tonconnect/ui-react";
+import {TonConnectButton, Locales, useTonConnectUI} from "@tonconnect/ui-react";
 
 export const Header = () => {
     const wallet = useTonWallet();
@@ -19,19 +19,6 @@ export const Header = () => {
                 <option value="ru">ru</option>
               </select>
             </div>
-            wallet && (
-              <div>
-                <span>Connected wallet address: {wallet.account.address}</span>
-                <span>Device: {wallet.device.appName}</span>
-                <span>Connected via: {wallet.provider}</span>
-                {wallet.connectItems?.tonProof?.proof && <span>Ton proof: {wallet.connectItems.tonProof.proof}</span>}
-        
-                <div>Connected wallet info:</div>
-                <div>
-                  {wallet.name} <img src={wallet.imageUrl} />
-                </div>
-              </div>
-            )
         </header>
     );
 };
