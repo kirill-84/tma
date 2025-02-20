@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + Connect a Wallet
+# React + TypeScript + Vite + TON (The Open Network) Connect a Wallet
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
