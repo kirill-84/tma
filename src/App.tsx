@@ -6,7 +6,7 @@ import {TonConnectUIProvider} from '@tonconnect/ui-react'
 import {Header} from "./components/Header/Header"
 import WebApp from '@twa-dev/sdk'
 
-function copyText(entryText){
+function copyText(entryText: any){
   navigator.clipboard.writeText(entryText);
 }
 
