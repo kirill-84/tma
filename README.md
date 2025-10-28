@@ -49,3 +49,6 @@ export default tseslint.config({
   },
 })
 ```
+
+## For inspiration
+**TON**: UQBwJX9X7no3RSaiHM9dke-3sI-tS37IK_zUmvhOrzU8o5FI
